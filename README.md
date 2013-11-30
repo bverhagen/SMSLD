@@ -1,4 +1,5 @@
 ===== SOFTWARE =====
+
 This software contains the SMSLD implementation as proposed by 
 Bart Verhagen, Radu Timofte (radu.timofte@esat.kuleuven.be) and 
 Luc Van Gool (luc.vangool@esat.kuleuven.be). The current implementation
