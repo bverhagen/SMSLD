@@ -1,0 +1,23 @@
+clear;
+close all;
+
+benchmark('boat');
+fprintf(1,'\n');
+benchmark('bark');
+fprintf(1,'\n');
+restoredefaultpath;
+benchmark('bikes');
+fprintf(1,'\n');
+benchmark('graf');
+fprintf(1,'\n');
+restoredefaultpath;
+benchmark('leuven');
+fprintf(1,'\n');
+benchmark('wall');
+fprintf(1,'\n');
+restoredefaultpath;
+benchmark('ubc');
+fprintf(1,'\n');
+benchmark('trees');
+fprintf(1,'\n');
+benchmark('arenberg');
