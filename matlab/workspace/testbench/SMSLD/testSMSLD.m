@@ -28,7 +28,7 @@ Options.showCheckMatches = 0;
 
 Options.extension = 'ppm';
 
-run('../../benchmark/readarenberg');
+run('../../benchmark/readzoom');
 [result,elapsed_time] = SMSLDFindMatches(I1,I4,path_to_exe, Options);
 
 displayScaledMatches(I1,I2,result);

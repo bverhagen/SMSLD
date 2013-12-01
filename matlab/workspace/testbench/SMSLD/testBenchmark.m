@@ -20,4 +20,4 @@ benchmark('ubc');
 fprintf(1,'\n');
 benchmark('trees');
 fprintf(1,'\n');
-benchmark('arenberg');
+benchmark('zoom');
