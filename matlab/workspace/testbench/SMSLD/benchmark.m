@@ -4,7 +4,7 @@ run(['../../benchmark/read', benchmark_name]);
 fprintf('Applying benchmark %s\n',benchmark_name);
 
 folder_to_save = ['../../benchmark_results/',benchmark_name,'/SMSLD/'];
-path_to_exe = '..\..\..\..\SMSLD\SMSLD\SMSLD_Step2_Match\Release\TianMatch.exe';
+path_to_exe = '..\..\..\..\SMSLD\SMSLD\SMSLD\Release\TianMatch.exe';
 
 addpath('../../SMSLD/');
 addpath('../../general/');

@@ -25,6 +25,9 @@ save_name_result = 'matches.txt';
 [lines1,scales1] = generateLineFileFunction(I1,[path,save_name1_txt], size(I1,1),size(I1,2),offset,Options);
 [lines2,scales2] = generateLineFileFunction(I2,[path,save_name2_txt], size(I2,1),size(I2,2),offset,Options);
 
+fprintf(1, 'Nb of line segments image 1: %d\n', length(lines1));
+fprintf(1, 'Nb of line segments image 2: %d\n', length(lines2));
+
 % Check if gray
 if(size(size(I1),2) > 2)
     I1_big = zeros(size(I1,1)+2*offset,size(I1,2)+2*offset,3,'uint8');

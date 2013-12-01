@@ -2,6 +2,28 @@
 Total number of matches: 195
 Number of scaled matches: 25
 Correct matches ratio: 0.94
-Elapsed time: 5.044421 s
+Elapsed time: 4.843462 s
 
 *** Image 1 vs 3 ***
+Total number of matches: 31
+Number of scaled matches: 1
+Correct matches ratio: 0.68
+Elapsed time: 5.233542 s
+
+*** Image 1 vs 4 ***
+Total number of matches: 16
+Number of scaled matches: 2
+Correct matches ratio: 0.31
+Elapsed time: 4.088640 s
+
+*** Image 1 vs 5 ***
+Total number of matches: 16
+Number of scaled matches: 3
+Correct matches ratio: 0.25
+Elapsed time: 5.044596 s
+
+*** Image 1 vs 6 ***
+Total number of matches: 21
+Number of scaled matches: 6
+Correct matches ratio: 0.00
+Elapsed time: 4.558812 s

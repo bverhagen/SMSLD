@@ -9,3 +9,9 @@ im2.ppm
 im1.txt
 im2.txt
 matches.txt
+*-1.txt
+*-2.txt
+Descriptor1.txt
+Descriptor2.txt
+Elapsed_time.txt
+*.mat

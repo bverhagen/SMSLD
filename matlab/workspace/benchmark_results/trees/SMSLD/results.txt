@@ -1,0 +1,29 @@
+*** Image 1 vs 2 ***
+Total number of matches: 24
+Number of scaled matches: 1
+Correct matches ratio: 0.83
+Elapsed time: 1.571488 s
+
+*** Image 1 vs 3 ***
+Total number of matches: 24
+Number of scaled matches: 1
+Correct matches ratio: 0.83
+Elapsed time: 1.459899 s
+
+*** Image 1 vs 4 ***
+Total number of matches: 13
+Number of scaled matches: 0
+Correct matches ratio: 0.92
+Elapsed time: 1.574202 s
+
+*** Image 1 vs 5 ***
+Total number of matches: 9
+Number of scaled matches: 0
+Correct matches ratio: 0.22
+Elapsed time: 1.564132 s
+
+*** Image 1 vs 6 ***
+Total number of matches: 3
+Number of scaled matches: 0
+Correct matches ratio: 0.67
+Elapsed time: 1.469731 s
