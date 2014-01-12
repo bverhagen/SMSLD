@@ -7,6 +7,11 @@ function is_correct = checkMatches(I1,I2,matches,H,Options,verbose)
 %   line.
 %   checkMatches_angle_threshold        Defines the maximum orientation
 %   deviation of the corresponding line segment from the real support line.
+%   plot_correct                        If this value is other than 0, the
+%   correct matches will be shown in green and the wrong ones in red. If
+%   this value is 0, corresponding line segments will be shown in the same
+%   colours. When out of colours, the previously used colours will be
+%   reused.
 current_path = mfilename('fullpath');
 [path,~,~] = fileparts(current_path);
 path_to_add = [path, '/../general/subaxis'];
@@ -19,13 +24,20 @@ homography_places = cellfun(@(x)  [x(:,2)./x(:,3), x(:,1)./x(:,3)],homography_pl
 
 is_correct = cellfun(@(x,y) compareSpots(x,y,Options),matches(:,2),homography_places);
 
+colours = ['r-'; 'g-'; 'b-';'c-';'m-'; 'y-'];
+
 if(Options.showCheckMatches)
     plot_colours = zeros(size(is_correct,1),2);
     for i = 1:size(is_correct,1)
-        if(is_correct(i) == 1)
-            plot_colours(i,:) = 'g-';
+        if(Options.plot_correct)
+           if(is_correct(i) == 1)
+               plot_colours(i,:) = 'g-';
+           else
+               plot_colours(i,:) = 'r-';
+           end
         else
-            plot_colours(i,:) = 'r-';
+            index = mod(i,size(colours,1));
+            plot_colours(i,:) = colours(index+1,:);
         end
     end
     plot_colours = mat2cell(plot_colours,ones(size(plot_colours,1),1),2);
@@ -41,14 +53,6 @@ if(Options.showCheckMatches)
     imshow(I2);
     hold on;
     cellfun(@(x,y) displayLine(x,char(y)),matches(:,2),plot_colours);
-    
-    for i = 1:length(is_correct)
-        if(is_correct(i) == 1)
-            displayLine(matches{i,2},'g-');
-        else
-            displayLine(matches{i,2},'r-');
-        end
-    end
     hold off;
     
     displayLineSegments(I1,I2,matches,homography_places);

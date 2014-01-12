@@ -24,3 +24,8 @@ All comments can be addressed to barrie.verhagen@gmail.com.
 	matlab/workspace/testbench/SMSLD/testBenchmark.m the 'path_to_exe' variable to
 	point to the binary created during the compilation of the TianMatch.sln project.
  - Run testSMSLD using matlab.
+
+===== Additional notes =====
+The MSLD implementation on which the SMSLD implementation is based is unstable.
+Rerunning the program a few times might give you the result in the end. Slightly changing
+a parameter may help to stabilize.

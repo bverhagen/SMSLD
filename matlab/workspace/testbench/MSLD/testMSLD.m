@@ -30,6 +30,7 @@ Options.scale_angle = 10*pi/180;
 Options.checkMatches_angle_threshold = 5 * pi/180;
 Options.checkMatches_distance_threshold = 5;
 Options.showCheckMatches = 1;
+Options.plot_correct = 1;
 
 %load('../../testimages/desk_front_rotated.mat');
 run('../../benchmark/readzoom');

@@ -44,6 +44,7 @@ Options.showScaledLines = 0;
 Options.checkMatches_angle_threshold = 5 * pi/180;
 Options.checkMatches_distance_threshold = 5;
 Options.showCheckMatches = 0;
+Options.plot_correct = 1;
 
 fid = fopen([folder_to_save,'results.txt'],'w');
 

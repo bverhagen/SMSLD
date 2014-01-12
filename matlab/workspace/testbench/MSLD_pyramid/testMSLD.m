@@ -26,19 +26,23 @@ Options.showDiscardedSmallScaleLines = 0;
 Options.showScaledLines = 0;
 Options.verbose = 0;
 Options.scale_angle = 10*pi/180;
+Options.extension = 'ppm';
 
 % For checking matching score
 Options.checkMatches_angle_threshold = 5 * pi/180;
 Options.checkMatches_distance_threshold = 5;
 Options.showCheckMatches = 1;
+Options.plot_correct = 1;
 
-%load('../../testimages/desk_front_rotated.mat');
-run('../../benchmark/readzoom');
-clear I2;
-clear I3;
-clear I5;
-clear I6;
-Options.extension = 'ppm';
+%% Plot using specific images without known homography
+% I1 = imread('../../benchmark/difficult_scenes/difficult_scene_2a.jpg');
+% I2 = imread('../../benchmark/difficult_scenes/difficult_scene_2b.jpg');
+% % Give a fake homography
+% H1to2p = [ 1 0 0; 0 1 0; 0 0 1];
+% Options.plot_correct = 0;
+
+%% Plot using a benchmark with a known homography
+run('../../benchmark/readwall');
 
 [result,~] = MSLDFindMatches(I1,I4,path_of_desc, path_of_match, Options);
 

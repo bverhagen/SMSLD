@@ -75,6 +75,7 @@ Options.showScaledLines = 0;
 Options.checkMatches_angle_threshold = 5 * pi/180;
 Options.checkMatches_distance_threshold = 5;
 Options.showCheckMatches = 0;
+Options.plot_correct = 1;
 
 fid = fopen([folder_to_save,'results.txt'],'w');
 
@@ -134,7 +135,7 @@ fprintf(1,'\n*** Image 1 vs 6 ***\n');
 fprintf(fid,'\n*** Image 1 vs 6 ***\n');
 
 [result,~] = MSLDFindMatches(I1,I6,path_of_desc, path_of_match,Options);
-correct_matches = checkMatches(I1,I6,result,H1to6p,Options,1);
+correct_matches = checkMatches(I1,I6,result,H1to6p,Options,1, 1);
 
 % Write to file
 fprintf(fid,'Total number of matches: %d\n', size(result,1));

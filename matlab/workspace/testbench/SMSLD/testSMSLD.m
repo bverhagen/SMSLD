@@ -26,10 +26,11 @@ Options.scale_angle = 10*pi/180;
 Options.checkMatches_angle_threshold = 5 * pi/180;
 Options.checkMatches_distance_threshold = 5;
 Options.showCheckMatches = 1;
+Options.plot_correct = 1;
 
 Options.extension = 'ppm';
 
-run('../../benchmark/readzoom');
+run('../../benchmark/readwall');
 [result,elapsed_time] = SMSLDFindMatches(I1,I4,path_to_exe, Options);
 
 displayScaledMatches(I1,I4,result);
