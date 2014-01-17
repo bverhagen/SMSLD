@@ -30,7 +30,7 @@ Options.plot_correct = 1;
 
 Options.extension = 'ppm';
 
-run('../../benchmark/readwall');
+run('../../benchmark/readzoom');
 [result,elapsed_time] = SMSLDFindMatches(I1,I4,path_to_exe, Options);
 
 displayScaledMatches(I1,I4,result);

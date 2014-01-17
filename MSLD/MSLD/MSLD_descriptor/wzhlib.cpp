@@ -375,7 +375,12 @@ bool SaveDescriptor(float * pDes, int nLineCount, byte * pByValidFlag, int * szC
 	for(int i = 0; i < nLineCount; i++) {
 		for(int k = 0; k < nMaxRegionNum*8; k++)
 		{
-			fprintf(fp1,"%f  ", pDes[i*nDesDim+k]);
+			if(pDes[i*nDesDim+k] > 0) {
+				fprintf(fp1,"%f  ", pDes[i*nDesDim+k]);
+			} else {
+				// Means it has overflown and is most likely not a valid line
+				fprintf(fp1,"%f  ", -1.0f);
+			}
 		}
 		fprintf(fp1,"\n");
 	}
