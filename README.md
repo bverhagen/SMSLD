@@ -34,4 +34,5 @@ If you are using this software, please quote our associated work:
 
 Scale-invariant Line Descriptors for Wide Baseline Matching
 by B. Verhagen, R. Timofte and L Van Gool.
-published at WACV 2014
+published at 2014 IEEE Winter Conference on Applications of Computer Vision (WACV)
+Copyright by IEEE
