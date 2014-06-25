@@ -27,6 +27,7 @@ All comments can be addressed to bart.verhagen@tass.be or barrie.verhagen@gmail.
 Note: default the paths are set to run the test algorithms in the directory they exist.
 
 ===== Additional notes =====
+
 The MSLD implementation on which the SMSLD implementation is based is unstable.
 Rerunning the program a few times might give you the result in the end. Slightly changing
 a parameter may help to stabilize.
