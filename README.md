@@ -10,7 +10,7 @@ This software contains the SMSLD descriptor. The SMSLD descriptor is a scale-inv
 line segment descriptor for wide baseline matching. More info can be found in the paper
 about SMSLD.
 
-All comments can be addressed to bart.verhagen@tass.be or barrie.verhagen@gmail.com
+All comments can be addressed to the lead author.
 
 ===== Requirements =====
  - MATLAB
